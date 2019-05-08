@@ -1,0 +1,89 @@
+{
+    "type": "object",
+    "properties": {
+        "framework": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "ada-server",
+                "aspnetcore",
+                "erlang-server",
+                "finch",
+                "go-server",
+                "haskell",
+                "inflector",
+                "java-pkmst",
+                "java-play-framework",
+                "java-vertx",
+                "jaxrs",
+                "jaxrs-cxf",
+                "jaxrs-cxf-cdi",
+                "jaxrs-resteasy",
+                "jaxrs-resteasy-eap",
+                "jaxrs-spec",
+                "kotlin-server",
+                "lumen",
+                "msf4j",
+                "nancyfx",
+                "nodejs-server",
+                "php-silex",
+                "php-symfony",
+                "pistache-server",
+                "python-flask",
+                "rails5",
+                "restbed",
+                "rust-server",
+                "scala-lagom-server",
+                "scalatra",
+                "sinatra",
+                "slim",
+                "spring",
+                "undertow",
+                "ze-ph"
+            ]
+        },
+        "requestBody": {
+            "properties": {
+                "authorizationValue": {
+                    "properties": {
+                        "keyName": {
+                            "type": "string"
+                        },
+                        "type": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "options": {
+                    "additionalProperties": {
+                        "type": "string"
+                    },
+                    "type": "object"
+                },
+                "securityDefinition": {
+                    "properties": {
+                        "description": {
+                            "type": "string"
+                        },
+                        "type": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "spec": {
+                    "type": "object"
+                },
+                "swaggerUrl": {
+                    "example": "http://petstore.swagger.io/v2/swagger.json",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}
